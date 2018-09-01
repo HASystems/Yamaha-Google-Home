@@ -72,7 +72,7 @@ class SCENES:
 					print("D		display the current Yamaha status")
 					print("Q		Quit the cli")
 					print("?		this help text")
-					for c in self.macrolist.keys():
+					for c in sorted(self.macrolist.keys()):
 						print(c+"		MACRO",self.macrolist[c])
 				else:
 					# check for the remote control commands, and build the macro

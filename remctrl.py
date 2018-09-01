@@ -28,7 +28,7 @@ class REMCTRL:
 
 	def _writeMacros(self):
 		f = open(self.rcfile,"w")
-		for k in self.macrolist:
+		for k in sorted(self.macrolist):
 			str = k
 			for v in self.macrolist[k]:
 				str = str+"|"+v
